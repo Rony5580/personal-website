@@ -1,0 +1,319 @@
+*{
+    padding=0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Croissant One', cursive;
+}
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    
+
+}
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+/* for mobile */
+[class*="col-"]{
+    width: 100%;
+}
+
+
+/* navebar design starts here */
+
+.navebar{
+    background-color: #21618C ;
+    padding: 1% 7%;
+    text-align: center;
+}
+.navebar h1{
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+
+}
+.nav-menu a{
+    background-color: #0c6168;
+    padding: 10px;
+    margin: 7px;
+    color: white;
+    border-radius: 10px;
+}
+.nav-menu a:hover{
+        background-color: gray;
+}
+
+.navebar::after{
+     content: "";
+     display: table;
+     clear: both;
+
+}
+.dottet-hr{
+    border: dotted;
+    width: 70px;
+   margin: 0 auto;
+   border-bottom: none;
+}
+
+/* navebar design Ends here */
+
+/* profile design starts here */
+.profile{
+    padding: 130px 10px;
+    position: relative;
+    text-align: center;
+
+}
+.top-icon{
+       position: absolute;
+       right: 60px;   
+       top: 10px;
+       transition: transform 2s;
+}
+.top-icon:hover{
+    transform: rotate(360deg);
+}
+ .profile-head h1{
+    font-family: 'Skranji', cursive;
+    font-size: 3rem;
+}
+.profile-des p{
+    color: gray;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    width: 90%;
+}
+.bottom-icom{
+    position: absolute;
+    left: 60px;   
+    bottom: 10px;
+    transition: transform 2s;
+}
+.bottom-icom:hover{
+ transform: rotate(360deg);
+}
+
+.profile::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* profile design Ends here */
+
+/* about me design starts here */
+.about{
+    background-color: #39a4ac;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+.about-me-img img{
+    height: 200px;
+    width: 220px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.about-des p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.about-des button{
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+}
+.about{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* about me design ends here */
+
+/* Professional status starts here */
+.card{
+    background-color: #a39e9e;
+    border-radius: 5px;
+    padding: 10px;
+    height: 600px;
+    transition: 0.3s;
+}
+.card:hover{
+     box-shadow: 0px 4px 8px 5px black;
+}
+.card-heading{
+    background-color: #616161;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.card-icon{
+    text-align: center;
+}
+.card-icon img{
+    width: 100px;
+    margin-top: 20px;
+    
+}
+.rounded-img{
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 15px;
+}
+.work-exprience::after{
+    content: "";
+     display: table;
+     clear: both;
+}
+
+/* Professional status starts here */
+
+.skill-container{
+    padding-right: 45px;
+}
+
+.skill-container li{
+    list-style: none;
+    font-weight: bolder;
+    margin: 40px 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+.skill-container li::before{
+    content: "";
+    position: absolute;
+    top: calc(100% + 5px);
+
+    width: 100%;
+    height: 10px;
+    background-color: rgb(86, 86, 153,1);
+    border-radius: 1000px;
+
+    
+}
+
+.skill-container li::after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 5px);
+
+    width: 0px;
+    height: 10px;
+    background-color: rgb(86, 86, 153,1);
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.skill-container li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+
+
+.skill::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* achievement starts */
+
+.achivement-container{
+    background-color: #1ABC9C  ;
+    color: white;
+
+}
+.Contract{
+    text-align: center;
+    
+}
+
+.Contract input, textarea{
+    width: 100%;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+.Social-contract{
+    text-align: center;
+    
+}
+.btn{
+    padding: 20px;
+    margin: 15px;
+    border: none;
+    border-radius: 20px;
+
+}
+.btn:hover{
+
+    background-color: gray;
+}
+
+
+.achivement-container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* achievement Ends */
+
+.footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.footer a{
+    color: white;
+    display: block;
+    margin: 20px;
+}
+
+.footer a:hover{
+    background-color: gray;
+    
+}
+
+.footer::after{
+    content: "";
+    display: table;
+    clear: both;
+}
